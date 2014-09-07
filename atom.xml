@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Eric Jones</title>
- <link href="/atom.xml" rel="self"/>
- <link href="/"/>
- <updated>2014-09-07T18:11:03+02:00</updated>
- <id>/</id>
+ <link href="http://blog.webbb.beatom.xml" rel="self"/>
+ <link href="http://blog.webbb.be"/>
+ <updated>2014-09-07T18:13:48+02:00</updated>
+ <id>http://blog.webbb.be</id>
  <author>
    <name>Benoît Boucart</name>
  </author>
@@ -13,9 +13,9 @@
  
  <entry>
    <title>How to use Jekyll</title>
-   <link href="//use-jekyll-with-gulp/"/>
+   <link href="http://blog.webbb.be/use-jekyll-with-gulp/"/>
    <updated>2014-09-05T00:00:00+02:00</updated>
-   <id>//use-jekyll-with-gulp</id>
+   <id>http://blog.webbb.be/use-jekyll-with-gulp</id>
    <content type="html">&lt;p&gt;This blog is built with &lt;strong&gt;Jekyll&lt;/strong&gt;, a static site generator. That means that raw HTML files are generated and so no database is required like for a WordPress blog. That gives your website a considerable performance boost. &lt;/p&gt;
 
 &lt;p&gt;One of the other advantages of using &lt;em&gt;Jekyll&lt;/em&gt; is that you can write your posts in your favorite text editor and then push your changes via GIT for deployment.&lt;/p&gt;
@@ -101,9 +101,9 @@
  
  <entry>
    <title>Use Google Maps</title>
-   <link href="//angular-js-directive/"/>
+   <link href="http://blog.webbb.be/angular-js-directive/"/>
    <updated>2014-08-05T00:00:00+02:00</updated>
-   <id>//angular-js-directive</id>
+   <id>http://blog.webbb.be/angular-js-directive</id>
    <content type="html">&lt;p&gt;The community behind AngularJS is fantastic. When you’re facing a problem the chance is high that you’ll find a solution on the web. Sometimes you’ll even find a proper &lt;em&gt;Angular directive&lt;/em&gt;. And that was the case when I was looking for combining AngularJS with Google Maps.&lt;/p&gt;
 
 &lt;p&gt;There are multiple libraries that integrates the Google Maps API with AngularJS. Some are:&lt;/p&gt;
@@ -146,9 +146,9 @@
  
  <entry>
    <title>Trigger CSS</title>
-   <link href="//trigger-css-animation-scroll/"/>
+   <link href="http://blog.webbb.be/trigger-css-animation-scroll/"/>
    <updated>2014-04-13T00:00:00+02:00</updated>
-   <id>//trigger-css-animation-scroll</id>
+   <id>http://blog.webbb.be/trigger-css-animation-scroll</id>
    <content type="html">
 &lt;p&gt;An example of this trick can be seen on the &lt;a href=&quot;http://jeet.gs/&quot;&gt;Jeet Grid System website&lt;/a&gt;. When you scroll down, you see that CSS transform animations are triggered.&lt;/p&gt;
 
@@ -199,9 +199,9 @@
  
  <entry>
    <title>CSS only off-canvas</title>
-   <link href="//css-canvas-menu-like-spotify-app/"/>
+   <link href="http://blog.webbb.be/css-canvas-menu-like-spotify-app/"/>
    <updated>2014-04-06T00:00:00+02:00</updated>
-   <id>//css-canvas-menu-like-spotify-app</id>
+   <id>http://blog.webbb.be/css-canvas-menu-like-spotify-app</id>
    <content type="html">&lt;p&gt;The off-canvas layout I made for this tutorial is based on &lt;em&gt;&lt;a title=&quot;Off Canvas Menu with CSS :target&quot; href=&quot;http://css-tricks.com/off-canvas-menu-with-css-target/&quot; target=&quot;_blank&quot;&gt;Off Canvas Menu with CSS :target&lt;/a&gt;&lt;/em&gt;. I made some changes to this code to make it look like the &lt;em&gt;Spotify Android app&lt;/em&gt;:&lt;/p&gt;
 &lt;ul&gt;
     &lt;li&gt;A fixed header that doesn&#39;t animate&lt;/li&gt;
@@ -235,9 +235,9 @@
  
  <entry>
    <title>Updating to SASS 3.3</title>
-   <link href="//updating-sass-compass/"/>
+   <link href="http://blog.webbb.be/updating-sass-compass/"/>
    <updated>2014-03-17T00:00:00+01:00</updated>
-   <id>//updating-sass-compass</id>
+   <id>http://blog.webbb.be/updating-sass-compass</id>
    <content type="html">&lt;p&gt;When I read the article &lt;a href=&quot;http://alwaystwisted.com/post.php?s=2014-02-27-even-easier-bem-ing-with-sass-33&quot; title=&quot;Even Easier BEM-ing with Sass 3.3&quot;&gt;“Even Easier BEM-ing with Sass 3.3”&lt;/a&gt;, I really wanted to try out the new Sass release. This new “@-root” alternative syntax made it perfect for BEMming your CSS. But it didn’t worked with Compass…&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;First of all I updated my sass gem like so:
@@ -261,9 +261,9 @@ or &lt;code&gt;Syntax error: Invalid css after bem __ expected &quot;{&quot;&lt;
  
  <entry>
    <title>Command not found</title>
-   <link href="//command-not-found-node-npm/"/>
+   <link href="http://blog.webbb.be/command-not-found-node-npm/"/>
    <updated>2014-03-16T00:00:00+01:00</updated>
-   <id>//command-not-found-node-npm</id>
+   <id>http://blog.webbb.be/command-not-found-node-npm</id>
    <content type="html">&lt;p&gt;To give you a little context: I ran the following command for installing Gulp (a &lt;i&gt;node package module&lt;/i&gt;) globally:
 &lt;code&gt;npm install -g gulp&lt;/code&gt;&lt;/p&gt;
 
@@ -283,9 +283,9 @@ or &lt;code&gt;Syntax error: Invalid css after bem __ expected &quot;{&quot;&lt;
  
  <entry>
    <title>Social Media icons</title>
-   <link href="//social-media-icons-css3-hover-effects/"/>
+   <link href="http://blog.webbb.be/social-media-icons-css3-hover-effects/"/>
    <updated>2014-01-04T00:00:00+01:00</updated>
-   <id>//social-media-icons-css3-hover-effects</id>
+   <id>http://blog.webbb.be/social-media-icons-css3-hover-effects</id>
    <content type="html">&lt;p&gt;I used the great &lt;a href=&quot;http://fontawesome.io/&quot;&gt;Font-Awesome&lt;/a&gt; (webfont for icons) library for the Social Media icons.&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&quot;full-item alignnone size-large wp-image-504&quot; alt=&quot;CSS social media hover effect 3D&quot; src=&quot;http://webbb.be/blog/wp-content/uploads/2014/01/social-media-hover-effects-1024x491.png&quot; width=&quot;482&quot; height=&quot;239&quot; /&gt;&lt;/p&gt;
@@ -300,9 +300,9 @@ or &lt;code&gt;Syntax error: Invalid css after bem __ expected &quot;{&quot;&lt;
  
  <entry>
    <title>Macaw</title>
-   <link href="//macaw-finally-decent-webdesign-software/"/>
+   <link href="http://blog.webbb.be/macaw-finally-decent-webdesign-software/"/>
    <updated>2014-01-03T00:00:00+01:00</updated>
-   <id>//macaw-finally-decent-webdesign-software</id>
+   <id>http://blog.webbb.be/macaw-finally-decent-webdesign-software</id>
    <content type="html">&lt;p&gt;Macaw is called by it’s creators &lt;em&gt;“The next generation web design tool. Powered by the world’s most intelligent design-to-code engine”&lt;/em&gt;. What if this is not only an exaggerated marketing description?&lt;!--more--&gt;&lt;/p&gt;
 
 &lt;p&gt;The main advantage of Macaw is that it’s &lt;b&gt;built by and for web designers&lt;/b&gt;. Photoshop is a great app, but it was not intended for web designers. Photoshop made some useful improvements for web designers the last years, but it has some significant shortcomings when it comes to, for example, “&lt;em&gt;Responsive Web Design&lt;/em&gt;”.&lt;/p&gt;
@@ -330,9 +330,9 @@ or &lt;code&gt;Syntax error: Invalid css after bem __ expected &quot;{&quot;&lt;
  
  <entry>
    <title>IFTTT recipes</title>
-   <link href="//ifttt-recipes-designers/"/>
+   <link href="http://blog.webbb.be/ifttt-recipes-designers/"/>
    <updated>2013-12-26T00:00:00+01:00</updated>
-   <id>//ifttt-recipes-designers</id>
+   <id>http://blog.webbb.be/ifttt-recipes-designers</id>
    <content type="html">&lt;h2 class=&quot;mt-0&quot;&gt;Add a copy of your new Dribbble shot to...&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Dribbble&lt;/strong&gt; creates a RSS feed with the shots of a specific user.
@@ -376,9 +376,9 @@ For example my RSS link with my latest Dribbble shots is: &lt;em&gt;http://drib
  
  <entry>
    <title>Useful plugins</title>
-   <link href="//useful-plugins-for-wordpress-2013/"/>
+   <link href="http://blog.webbb.be/useful-plugins-for-wordpress-2013/"/>
    <updated>2013-05-22T00:00:00+02:00</updated>
-   <id>//useful-plugins-for-wordpress-2013</id>
+   <id>http://blog.webbb.be/useful-plugins-for-wordpress-2013</id>
    <content type="html">&lt;p&gt;But in fact, in the last years WordPress added some great new features making it a better &lt;strong&gt;“overall” CMS&lt;/strong&gt;. WordPres has also an extremely large community with many (mostly free) plugins that can make WordPress an even better Content Management System.&lt;/p&gt;
 
 &lt;h2&gt;Enhance editing&lt;/h2&gt;
@@ -458,9 +458,9 @@ For example my RSS link with my latest Dribbble shots is: &lt;em&gt;http://drib
  
  <entry>
    <title>Swinging effect</title>
-   <link href="//making-a-swinging-effect-with-css3-animations/"/>
+   <link href="http://blog.webbb.be/making-a-swinging-effect-with-css3-animations/"/>
    <updated>2013-05-11T00:00:00+02:00</updated>
-   <id>//making-a-swinging-effect-with-css3-animations</id>
+   <id>http://blog.webbb.be/making-a-swinging-effect-with-css3-animations</id>
    <content type="html">&lt;p&gt;&lt;a title=&quot;Little CSS3 3D hover effects&quot; href=&quot;http://webbb.be/blog/little-css3-3d-hover-effects/&quot; target=&quot;_blank&quot;&gt;In a previous post&lt;/a&gt; I’ve made two subtle CSS3 hover effects with CSS transitions. In this tutorial I’m using &lt;strong&gt;CSS3 &lt;b&gt;animations&lt;/b&gt;&lt;/strong&gt; and &lt;strong&gt;transitions&lt;/strong&gt; to create a “swinging” hover effect for a “follow me on Twitter” button.&lt;/p&gt;
 
 &lt;p&gt;&lt;img class=&quot;alignnone size-full wp-image-331 full-item&quot; alt=&quot;Swinging CSS3 animation hover effect&quot; src=&quot;http://webbb.be/blog/wp-content/uploads/2013/05/swining-css3-animation-effect.jpg&quot; /&gt;&lt;/p&gt;
@@ -502,9 +502,9 @@ For example my RSS link with my latest Dribbble shots is: &lt;em&gt;http://drib
  
  <entry>
    <title>Free PHP CMS</title>
-   <link href="//free-php-cms-that-are-easy-to-use/"/>
+   <link href="http://blog.webbb.be/free-php-cms-that-are-easy-to-use/"/>
    <updated>2013-05-08T00:00:00+02:00</updated>
-   <id>//free-php-cms-that-are-easy-to-use</id>
+   <id>http://blog.webbb.be/free-php-cms-that-are-easy-to-use</id>
    <content type="html">&lt;p&gt;This article is a - non-exhaustive - overview of available free CMS that I’ve tested or that are promising.&lt;/p&gt;
 &lt;h2&gt;Free PHP CMS&lt;/h2&gt;
 &lt;ol&gt;
@@ -533,9 +533,9 @@ I haven&#39;t had the possibility to test &lt;strong&gt;ProcessWire&lt;/strong&
  
  <entry>
    <title>Light Social</title>
-   <link href="//integrate-socialcount-lightweight-social-buttons-with-wordpress/"/>
+   <link href="http://blog.webbb.be/integrate-socialcount-lightweight-social-buttons-with-wordpress/"/>
    <updated>2013-04-27T00:00:00+02:00</updated>
-   <id>//integrate-socialcount-lightweight-social-buttons-with-wordpress</id>
+   <id>http://blog.webbb.be/integrate-socialcount-lightweight-social-buttons-with-wordpress</id>
    <content type="html">&lt;p&gt;First of all let’s download the &lt;a title=&quot;SocialCount Github&quot; href=&quot;https://github.com/filamentgroup/SocialCount/tree/master/src&quot; target=&quot;_blank&quot;&gt;SocialCount package on GitHub&lt;/a&gt;. The files that are needed for this tutorial are:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -570,9 +570,9 @@ I haven&#39;t had the possibility to test &lt;strong&gt;ProcessWire&lt;/strong&
  
  <entry>
    <title>Some beautiful</title>
-   <link href="//beautiful-google-web-fonts/"/>
+   <link href="http://blog.webbb.be/beautiful-google-web-fonts/"/>
    <updated>2013-04-18T00:00:00+02:00</updated>
-   <id>//beautiful-google-web-fonts</id>
+   <id>http://blog.webbb.be/beautiful-google-web-fonts</id>
    <content type="html">&lt;p&gt;We aren’t limited to &lt;em&gt;Arial, Verdana &lt;/em&gt;and other&lt;i&gt; &lt;/i&gt;&lt;em&gt;Georgia’s &lt;/em&gt;anymore. Here follows a list of some fonts I like to use.&lt;/p&gt;
 
 &lt;ol&gt;
@@ -607,9 +607,9 @@ Lato is &lt;strong&gt;sans-serif&lt;/strong&gt; typeface family, 10 styles by �
  
  <entry>
    <title>Little CSS3 3D</title>
-   <link href="//little-css3-3d-hover-effects/"/>
+   <link href="http://blog.webbb.be/little-css3-3d-hover-effects/"/>
    <updated>2013-04-13T00:00:00+02:00</updated>
-   <id>//little-css3-3d-hover-effects</id>
+   <id>http://blog.webbb.be/little-css3-3d-hover-effects</id>
    <content type="html">&lt;p&gt;In this little tutorial I’ll show how to make two 3D hover transitions like those on &lt;a title=&quot;my portfolio&quot; href=&quot;http://webbb.be&quot; target=&quot;_blank&quot;&gt;my portfolio&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;css3-social-media-icons-3d-rotation&quot;&gt;[1] CSS3 Social Media icons 3D rotation&lt;/h2&gt;
@@ -691,9 +691,9 @@ Lato is &lt;strong&gt;sans-serif&lt;/strong&gt; typeface family, 10 styles by �
  
  <entry>
    <title>Sketch</title>
-   <link href="//sketch-for-photoshop/"/>
+   <link href="http://blog.webbb.be/sketch-for-photoshop/"/>
    <updated>2013-03-24T00:00:00+01:00</updated>
-   <id>//sketch-for-photoshop</id>
+   <id>http://blog.webbb.be/sketch-for-photoshop</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;Sketch.app&lt;/strong&gt; is gaining constantly popularity the latest months. This was a reason for me for trying out this app. You can download a &lt;a href=&quot;&amp;quot;http://www.bohemiancoding.com/sketch&amp;quot;&quot; title=&quot;30-day free trial&quot;&gt;Free trial of Sketch&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;what-is-sketch-exactly&quot;&gt;What is Sketch exactly?&lt;/h2&gt;
@@ -726,9 +726,9 @@ Lato is &lt;strong&gt;sans-serif&lt;/strong&gt; typeface family, 10 styles by �
  
  <entry>
    <title>Set up GIT</title>
-   <link href="//set-up-git-and-a-github-repo/"/>
+   <link href="http://blog.webbb.be/set-up-git-and-a-github-repo/"/>
    <updated>2013-03-24T00:00:00+01:00</updated>
-   <id>//set-up-git-and-a-github-repo</id>
+   <id>http://blog.webbb.be/set-up-git-and-a-github-repo</id>
    <content type="html">&lt;ol&gt;
   &lt;li&gt;First of all, start with &lt;strong&gt;configuring&lt;/strong&gt; the system on your computer or Mac. You can find a short tutorial about it on the &lt;a href=&quot;https://help.github.com/articles/set-up-git#set-up-git&quot;&gt;GitHub website&lt;/a&gt;.&lt;/li&gt;
   &lt;li&gt;Making a GIT repository is simple: start with the &lt;strong&gt;initialising of the Git repository&lt;/strong&gt; with the following command: &lt;code&gt;git init&lt;/code&gt;&lt;/li&gt;
@@ -746,9 +746,9 @@ Lato is &lt;strong&gt;sans-serif&lt;/strong&gt; typeface family, 10 styles by �
  
  <entry>
    <title>Hello world</title>
-   <link href="//hello-world/"/>
+   <link href="http://blog.webbb.be/hello-world/"/>
    <updated>2013-03-23T00:00:00+01:00</updated>
-   <id>//hello-world</id>
+   <id>http://blog.webbb.be/hello-world</id>
    <content type="html">&lt;p&gt;That sound a little cliché, but welcome on my brand new blog. I’ll post some stuff about web design, CSS, HTML5, web development … and some other interesting topics that inspire me.&lt;/p&gt;
 
 &lt;p&gt;Feedback, bug reports, … are welcome! Find me on &lt;a href=&quot;http://twitter.com/benoitboucart&quot;&gt;Twitter&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://dribbble.com/benske&quot;&gt;Dribbble&lt;/a&gt;.&lt;/p&gt;
