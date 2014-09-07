@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Eric Jones</title>
- <link href="http://blog.webbb.beatom.xml" rel="self"/>
- <link href="http://blog.webbb.be"/>
- <updated>2014-09-07T18:15:32+02:00</updated>
+ <link href="http://blog.webbb.be/atom.xml" rel="self"/>
+ <link href="http://blog.webbb.be/"/>
+ <updated>2014-09-07T18:19:35+02:00</updated>
  <id>http://blog.webbb.be</id>
  <author>
    <name>Benoît Boucart</name>
