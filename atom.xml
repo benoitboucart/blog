@@ -4,7 +4,7 @@
  <title>Eric Jones</title>
  <link href="http://blog.webbb.be/atom.xml" rel="self"/>
  <link href="http://blog.webbb.be/"/>
- <updated>2014-09-07T18:58:31+02:00</updated>
+ <updated>2014-09-07T19:29:18+02:00</updated>
  <id>http://blog.webbb.be</id>
  <author>
    <name>Benoît Boucart</name>
@@ -288,7 +288,7 @@ or &lt;code&gt;Syntax error: Invalid css after bem __ expected &quot;{&quot;&lt;
    <id>http://blog.webbb.be/social-media-icons-css3-hover-effects</id>
    <content type="html">&lt;p&gt;I used the great &lt;a href=&quot;http://fontawesome.io/&quot;&gt;Font-Awesome&lt;/a&gt; (webfont for icons) library for the Social Media icons.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;full-item alignnone size-large wp-image-504&quot; alt=&quot;CSS social media hover effect 3D&quot; src=&quot;http://webbb.be/blog/wp-content/uploads/2014/01/social-media-hover-effects-1024x491.png&quot; width=&quot;482&quot; height=&quot;239&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;full-item alignnone size-large wp-image-504&quot; alt=&quot;CSS social media hover effect 3D&quot; src=&quot;http://blog.webbb.be/assets/img/pics/2014/01/social-media-hover-effects-1024x491.png&quot; width=&quot;482&quot; height=&quot;239&quot; /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Please note that the CSS in Dabblet (see the demo below) is unprefixed, this is because Dabblet has a nice &lt;code&gt;-prefix-free&lt;/code&gt; feature that automatically adds the correct prefixes in the result.&lt;/p&gt;
@@ -311,7 +311,7 @@ or &lt;code&gt;Syntax error: Invalid css after bem __ expected &quot;{&quot;&lt;
 
 &lt;p&gt;Macaw, on the other side, is aware of HTML, Javascript &amp;amp; CSS specifications. It is focused on what the &lt;b&gt;browser&lt;/b&gt; can do. Because of that, it can export your mockups to responsive and clean code.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;alignnone size-full wp-image-495 full-item&quot; alt=&quot;macaw-webdesign-software&quot; src=&quot;http://webbb.be/blog/wp-content/uploads/2014/01/macaw-webdesign-software.png&quot; width=&quot;952&quot; height=&quot;325&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;alignnone size-full wp-image-495 full-item&quot; alt=&quot;macaw-webdesign-software&quot; src=&quot;http://blog.webbb.be/assets/img/pics/2014/01/macaw-webdesign-software.png&quot; width=&quot;952&quot; height=&quot;325&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;Demonstration of the Macaw webdesign software&lt;/h2&gt;
 &lt;p&gt;Macaw has released an impressive “sneak peek” of the application some months ago. &lt;a title=&quot;Preview published website by Macaw&quot; href=&quot;http://macaw.co/peek/sample&quot;&gt;The code&lt;/a&gt;, exported by the tool, is very clean and at first sight very clever.&lt;/p&gt;
 
@@ -344,7 +344,7 @@ For example my RSS link with my latest Dribbble shots is: &lt;em&gt;http://drib
 &lt;h3&gt;Automatically post your new Dribbble shots on Twitter&lt;/h3&gt;
 &lt;p&gt;For this I created an IFTTT recipe, with the following description:&lt;/p&gt;
 &lt;blockquote&gt;If new feed item from &lt;a title=&quot;RSS feed from Dribbble&quot; href=&quot;http://dribbble.com/benske/shots.rss&quot; target=&quot;_blank&quot;&gt;http://dribbble.com/benske/shots.rss&lt;/a&gt;, then post a tweet to &lt;a title=&quot;Twitter&quot; href=&quot;https://twitter.com/benoitboucart‎&quot; target=&quot;_blank&quot;&gt;@benoitboucart&lt;/a&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img class=&quot;full-item alignnone size-large wp-image-447&quot; alt=&quot;If there is a new shot on Dribbble, share it on Twitter&quot; src=&quot;http://webbb.be/blog/wp-content/uploads/2013/12/if-new-post-on-a-dribbble-1024x340.png&quot; width=&quot;640&quot; height=&quot;212&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;full-item alignnone size-large wp-image-447&quot; alt=&quot;If there is a new shot on Dribbble, share it on Twitter&quot; src=&quot;http://blog.webbb.be/assets/img/pics/2013/12/if-new-post-on-a-dribbble-1024x340.png&quot; width=&quot;640&quot; height=&quot;212&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This recipe is public, so you can use &amp;amp; update it:&lt;/p&gt;
 
@@ -465,7 +465,7 @@ For example my RSS link with my latest Dribbble shots is: &lt;em&gt;http://drib
    <id>http://blog.webbb.be/making-a-swinging-effect-with-css3-animations</id>
    <content type="html">&lt;p&gt;&lt;a title=&quot;Little CSS3 3D hover effects&quot; href=&quot;http://webbb.be/blog/little-css3-3d-hover-effects/&quot; target=&quot;_blank&quot;&gt;In a previous post&lt;/a&gt; I’ve made two subtle CSS3 hover effects with CSS transitions. In this tutorial I’m using &lt;strong&gt;CSS3 &lt;b&gt;animations&lt;/b&gt;&lt;/strong&gt; and &lt;strong&gt;transitions&lt;/strong&gt; to create a “swinging” hover effect for a “follow me on Twitter” button.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;alignnone size-full wp-image-331 full-item&quot; alt=&quot;Swinging CSS3 animation hover effect&quot; src=&quot;http://webbb.be/blog/wp-content/uploads/2013/05/swining-css3-animation-effect.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;alignnone size-full wp-image-331 full-item&quot; alt=&quot;Swinging CSS3 animation hover effect&quot; src=&quot;http://blog.webbb.be/assets/img/pics/2013/05/swining-css3-animation-effect.jpg&quot; /&gt;&lt;/p&gt;
 &lt;h2&gt;The markup for the &quot;flip effect&quot;&lt;/h2&gt;
 &lt;p&gt;This is the (simple) markup for the hover effect:&lt;/p&gt;
 

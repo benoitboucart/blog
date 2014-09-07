@@ -1089,7 +1089,7 @@ $(function() {
         calculateSize($gridContainer);
         $gridContainer.packery('layout');
     } ) );
-    var initPlugins = function(){
+    var initPlugins = function(isFromAjax){
         // Show burger
         setTimeout(function(){
             $(".burger").addClass('burger--loaded');
@@ -1309,8 +1309,17 @@ $(function() {
             init();
 
         })();
+
+        if(isFromAjax && $('#disqus_thread').length > 0){
+            // Disqus is already loaded! & must be resetted
+            if(typeof DISQUS !== "undefined"){
+                DISQUS.reset({
+                    reload: true
+                });
+            }
+        }
     };
-    initPlugins();
+    initPlugins(false);
 
 
     // History API
@@ -1334,7 +1343,7 @@ $(function() {
             // Grid container update
             $gridContainer = $('.ajaxed__inner').find('.rowgrid')
 
-            initPlugins();
+            initPlugins(true);
             if($gridContainer.length){
               imagesLoaded( $gridContainer, function() {
                 loader.hide();
