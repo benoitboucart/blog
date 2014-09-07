@@ -4,7 +4,7 @@
  <title>Eric Jones</title>
  <link href="http://blog.webbb.be/atom.xml" rel="self"/>
  <link href="http://blog.webbb.be/"/>
- <updated>2014-09-07T18:45:15+02:00</updated>
+ <updated>2014-09-07T18:47:29+02:00</updated>
  <id>http://blog.webbb.be</id>
  <author>
    <name>Benoît Boucart</name>
@@ -333,7 +333,9 @@ or &lt;code&gt;Syntax error: Invalid css after bem __ expected &quot;{&quot;&lt;
    <link href="http://blog.webbb.be/ifttt-recipes-designers/"/>
    <updated>2013-12-26T00:00:00+01:00</updated>
    <id>http://blog.webbb.be/ifttt-recipes-designers</id>
-   <content type="html">&lt;h2 class=&quot;mt-0&quot;&gt;Add a copy of your new Dribbble shot to...&lt;/h2&gt;
+   <content type="html">&lt;p&gt;Here are some recipes you can use:&lt;/p&gt;
+
+&lt;h2 class=&quot;mt-0&quot;&gt;Add a copy of your new Dribbble shot to...&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Dribbble&lt;/strong&gt; creates a RSS feed with the shots of a specific user.
 For example my RSS link with my latest Dribbble shots is: &lt;em&gt;http://dribbble.com/benske/shots.rss&lt;/em&gt; (replace your username in this URL)&lt;/p&gt;
