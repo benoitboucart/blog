@@ -1329,11 +1329,14 @@ $(function() {
         e.preventDefault();
         History.pushState({}, "", this.pathname);
     });
-
+    
+    var rootUrl = History.getRootUrl();
     History.Adapter.bind(window, 'statechange', function(){
        loader.show();
         var State = History.getState();
+        var relativeUrl = State.url.replace(rootUrl,'');
         scrollToTop();
+
         $.get(State.url, function(data){
             var matches = data.match(/<title>(.*?)<\/title>/);
             if(matches.length>1){
@@ -1351,7 +1354,13 @@ $(function() {
             } else {
               loader.hide();
             }
-            
+    
+            // Inform Google Analytics of the change
+            if ( typeof ga !== 'undefined' ) {
+                console.log(relativeUrl);
+                ga('send','pageview',relativeUrl);
+            }
+
             //$('.content').html($(data).find('.content'));
             //_gaq.push(['_trackPageview', State.url]);
         });
