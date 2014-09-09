@@ -1357,7 +1357,6 @@ $(function() {
     
             // Inform Google Analytics of the change
             if ( typeof ga !== 'undefined' ) {
-                console.log(relativeUrl);
                 ga('send','pageview',relativeUrl);
             }
 
