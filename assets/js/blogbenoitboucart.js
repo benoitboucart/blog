@@ -1273,9 +1273,9 @@ $(function() {
                         $(container).removeClass( 'bb-menu-open' );
                     },
                     bodyClickFn = function(evt) {
-                        if( !$(evt.target).parent().hasClass('bb-menu') ) {
+                        if( $(evt.target).parents('.bb-menu').length == 0 ) {
                             buttons.removeClass('burger--open');
-                            resetMenu();
+                            resetMenu(); 
                             setTimeout(function(){
                                 $(container).removeClass(effect);
                                 //document.removeEventListener( eventtype, bodyClickFn );
