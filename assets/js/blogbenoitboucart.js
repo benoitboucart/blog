@@ -1275,7 +1275,7 @@ $(function() {
                     bodyClickFn = function(evt) {
                         if( $(evt.target).parents('.bb-menu').length == 0 ) {
                             buttons.removeClass('burger--open');
-                            resetMenu(); 
+                            resetMenu();
                             setTimeout(function(){
                                 $(container).removeClass(effect);
                                 //document.removeEventListener( eventtype, bodyClickFn );
