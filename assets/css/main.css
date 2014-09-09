@@ -4365,12 +4365,13 @@ input[type="text"], input[type="password"], input[type="email"], textarea {
 
   /* line 181, ../../../sass/modules/_responsive.scss */
   .arrow {
-    top: .65em;
+    top: 1.15em;
   }
 
   /* line 185, ../../../sass/modules/_responsive.scss */
   .main-header--trans {
     left: 2.1em;
+    top: .55em;
   }
 
   /* line 186, ../../../sass/modules/_responsive.scss */
@@ -4385,7 +4386,7 @@ input[type="text"], input[type="password"], input[type="email"], textarea {
 
   /* line 190, ../../../sass/modules/_responsive.scss */
   .page-title {
-    padding-top: .1em;
+    padding-top: .31em;
   }
 
   /* line 193, ../../../sass/modules/_responsive.scss */
