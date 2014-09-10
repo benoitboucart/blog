@@ -1164,32 +1164,29 @@ $(function() {
 
         /**
          * Scroll after....
-         */
-        if($viewport.width() > breakpoint_medium ){
-            var $scroll_container  = $('.l-top').first(),
-                scroll_to_height  = $scroll_container.outerHeight(true),
-                scroll_container_fixed_height = 87,
-                $content_wrapper  = $('.l-main')
-            ;
+        */
+        var $scroll_container  = $('.l-top').first(),
+            scroll_to_height  = $scroll_container.outerHeight(true),
+            scroll_container_fixed_height = 87,
+            $content_wrapper  = $('.l-main')
+        ;
 
-            function checkHeaderBar(){
-                if ($(window).scrollTop() > scroll_to_height) {
-                    // > scroll_to_height from top - show div
-                    if(!$scroll_container.hasClass("l-top--fixed")){
-                        $scroll_container.addClass('l-top--fixed').addClass('l-top--animate');
-                        $content_wrapper.css({'padding-top':scroll_to_height+ scroll_container_fixed_height + 'px'});
-                    }
-                }else{
-                    if($scroll_container.hasClass("l-top--fixed")){
-                        $scroll_container.removeClass('l-top--fixed').removeClass('l-top--animate');
-                        $content_wrapper.css({'padding-top':'0px'});
-                    }
+        function checkHeaderBar(){
+            if ($viewport.width() > breakpoint_medium && $(window).scrollTop() > scroll_to_height) {
+                // > scroll_to_height from top - show div
+                if(!$scroll_container.hasClass("l-top--fixed")){
+                    $scroll_container.addClass('l-top--fixed').addClass('l-top--animate');
+                    $content_wrapper.css({'padding-top':scroll_to_height+ scroll_container_fixed_height + 'px'});
+                }
+            }else{
+                if($scroll_container.hasClass("l-top--fixed")){
+                    $scroll_container.removeClass('l-top--fixed').removeClass('l-top--animate');
+                    $content_wrapper.css({'padding-top':'0px'});
                 }
             }
-
-            $(window).off('scroll').scroll(/*$.debounce(250, */checkHeaderBar/*)*/);
         }
 
+        $(window).off('scroll').scroll(/*$.debounce(250, */checkHeaderBar/*)*/);
 
 
         // Animate SVG
