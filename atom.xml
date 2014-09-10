@@ -4,7 +4,7 @@
  <title>Eric Jones</title>
  <link href="http://blog.webbb.be/atom.xml" rel="self"/>
  <link href="http://blog.webbb.be/"/>
- <updated>2014-09-09T21:04:17+02:00</updated>
+ <updated>2014-09-10T17:51:32+02:00</updated>
  <id>http://blog.webbb.be</id>
  <author>
    <name>Benoît Boucart</name>
@@ -104,7 +104,7 @@
    <link href="http://blog.webbb.be/angular-js-directive/"/>
    <updated>2014-08-05T00:00:00+02:00</updated>
    <id>http://blog.webbb.be/angular-js-directive</id>
-   <content type="html">&lt;p&gt;The community behind AngularJS is fantastic. When you’re facing a problem the chance is high that you’ll find a solution on the web. Sometimes you’ll even find a proper &lt;em&gt;Angular directive&lt;/em&gt;. And that was the case when I was looking for combining AngularJS with Google Maps.&lt;/p&gt;
+   <content type="html">&lt;p&gt;The community behind AngularJS is fantastic. When you’re facing a problem the chance is high that you’ll find a solution on the web. Sometimes you’ll even find a clean &lt;em&gt;Angular directive&lt;/em&gt;. And that was the case when I was looking for a solution for combining AngularJS with Google Maps.&lt;/p&gt;
 
 &lt;p&gt;There are multiple libraries that integrates the Google Maps API with AngularJS. Some are:&lt;/p&gt;
 
