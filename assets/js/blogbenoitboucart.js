@@ -1087,6 +1087,7 @@ $(function() {
     };
     var isInited = false;
     $(window).resize( $.throttle( 250, function(){
+        // Do not call the first resize
         if(isInited){
             calculateSize($gridContainer);
             $gridContainer.packery('layout');
