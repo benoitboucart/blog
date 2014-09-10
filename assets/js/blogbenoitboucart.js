@@ -1085,9 +1085,13 @@ $(function() {
             });
         }
     };
+    var isInited = false;
     $(window).resize( $.throttle( 250, function(){
-        calculateSize($gridContainer);
-        $gridContainer.packery('layout');
+        if(isInited){
+            calculateSize($gridContainer);
+            $gridContainer.packery('layout');
+        }
+        isInited = true;
     } ) );
     var initPlugins = function(isFromAjax){
         // Show burger
