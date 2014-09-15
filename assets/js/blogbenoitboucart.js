@@ -1180,13 +1180,13 @@ $(function() {
             if ($viewport.width() > breakpoint_medium && $(window).scrollTop() > scroll_to_height) {
                 // > scroll_to_height from top - show div
                 if(!$scroll_container.hasClass("l-top--fixed")){
-                    $scroll_container.addClass('l-top--fixed').addClass('l-top--animate');
-                    $content_wrapper.css({'padding-top':scroll_to_height+ scroll_container_fixed_height + 'px'});
+                    // $scroll_container.addClass('l-top--fixed').addClass('l-top--animate');
+                    // $content_wrapper.css({'padding-top':scroll_to_height+ scroll_container_fixed_height + 'px'});
                 }
             }else{
                 if($scroll_container.hasClass("l-top--fixed")){
-                    $scroll_container.removeClass('l-top--fixed').removeClass('l-top--animate');
-                    $content_wrapper.css({'padding-top':'0px'});
+                    // $scroll_container.removeClass('l-top--fixed').removeClass('l-top--animate');
+                    // $content_wrapper.css({'padding-top':'0px'});
                 }
             }
         }
