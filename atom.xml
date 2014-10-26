@@ -4,12 +4,97 @@
  <title>Webbb Blog</title>
  <link href="http://blog.webbb.be/atom.xml" rel="self"/>
  <link href="http://blog.webbb.be/"/>
- <updated>2014-10-20T16:10:37+02:00</updated>
+ <updated>2014-10-26T11:33:33+01:00</updated>
  <id>http://blog.webbb.be</id>
  <author>
    <name>Benoît Boucart</name>
  </author>
  
+ 
+ <entry>
+   <title>Great examples of Material Design animations</title>
+   <link href="http://blog.webbb.be/material-design-animation-examples/"/>
+   <updated>2014-10-26T00:00:00+02:00</updated>
+   <id>http://blog.webbb.be/material-design-animation-examples</id>
+   <content type="html">&lt;p&gt;Since the launch of Google’s new design guideline called ‘Material Design’ for Android Lollipop. They created a visual language for users that must unify the experience accross devices. You can read more about the subject on &lt;a href=&quot;http://www.google.com/design/spec/material-design/introduction.html&quot; title=&quot;Google Material design specs&quot;&gt;Google’s website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A lot of designers have already adopted the guidelines and I’ve collected some great examples.&lt;/p&gt;
+
+&lt;h2 id=&quot;instagram-with-material-design&quot;&gt;Instagram with Material Design&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Emmanuel Pacamalan&lt;/strong&gt;: “Here my concept of how instagram would look with material design. Material design is the next step in Google’s design evolution for Android. Also, some animations transitions may be too much but it just there to showcase what can be and to showcase separation of elements.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/ojwdmgmdR_Q&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;google-news-ux-and-ui-concept&quot;&gt;Google News UX and UI concept&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;George Kvasnikov&lt;/strong&gt; made a fantastic UX and UI concept for the Google News platform.&lt;/p&gt;
+
+&lt;iframe src=&quot;//player.vimeo.com/video/107937123?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;560&quot; height=&quot;315&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I really recommend to read his research and analysis &lt;a href=&quot;http://googlenews.gkvasnikov.com/&quot; title=&quot;Functional and visual redesign of Google News&quot;&gt;on his blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;material-animations&quot;&gt;Material animations&lt;/h2&gt;
+
+&lt;p&gt;An animated alarm UI concept made in &lt;em&gt;Adobe After Effects&lt;/em&gt; by &lt;strong&gt;Balraj Chana&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dribbble.com/shots/1717585-Google-s-Material-Design-Animation&quot; title=&quot;Alarm Material UI&quot;&gt;
+    &lt;img src=&quot;/assets/posts/2014/material-design/material-design-balraj-chana.gif&quot; alt=&quot;Alarm Material UI&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Material design concept by &lt;strong&gt;Ehsan Rahimi&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dribbble.com/shots/1640866-Alarm-Material-UI&quot; title=&quot;Material animation&quot;&gt;
+    &lt;img src=&quot;/assets/posts/2014/material-design/material-design-ehsan-rahimi.gif&quot; alt=&quot;Google&#39;s Material Design Animation&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;User profile animations by &lt;strong&gt;Dmytro Prudnikov&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dribbble.com/shots/1744157-User-Profile-Interface-Animation&quot;&gt;
+    &lt;img src=&quot;/assets/posts/2014/material-design/material-design-dmytro-prudnikov.gif&quot; alt=&quot;User Profile Interface Animation&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jovie Brett&lt;/strong&gt; made some great animations on Dribbble, based on Material Design.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dribbble.com/shots/1620608-Material-Design&quot; title=&quot;Material animation&quot;&gt;
+    &lt;img src=&quot;/assets/posts/2014/material-design/material-design-jovie-brett.gif&quot; alt=&quot;Material animation&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dribbble.com/shots/1770941-Material-Drawer&quot; title=&quot;Material drawer&quot;&gt;
+    &lt;img src=&quot;/assets/posts/2014/material-design/material-design-2-jovie-brett.gif&quot; alt=&quot;Material drawer&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dribbble.com/shots/1752769-Google-Design&quot; title=&quot;Material drawer&quot;&gt;
+    &lt;img src=&quot;/assets/posts/2014/material-design/material-design-3-jovie-brett.gif&quot; alt=&quot;Material design example&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://dribbble.com/shots/1647461-Material-Calculator&quot; title=&quot;Material drawer&quot;&gt;
+    &lt;img src=&quot;/assets/posts/2014/material-design/material-design-4-jovie-brett.gif&quot; alt=&quot;Material design example&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;material-animations-with-framerjs&quot;&gt;Material animations with FramerJS&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Francis Cortez&lt;/strong&gt; recreated some parts of the &lt;a href=&quot;https://www.youtube.com/watch?v=Q8TXgCzxEnw#t=33&quot;&gt;Google’s material design showreel&lt;/a&gt; in Framer (&lt;em&gt;tool to prototype interaction and animation&lt;/em&gt;) and shared his code on GitHub.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://franciscortez.com/framer-torch/&quot;&gt;Framer - Google Material Reel Re-creation&lt;/a&gt;: &lt;a href=&quot;http://cesperson.github.io/framer-torch/&quot;&gt;demo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://franciscortez.com/framer-design-reel/&quot;&gt;Framer - Google Material Reel Re-creation II&lt;/a&gt;: &lt;a href=&quot;http://cesperson.github.io/framer-reel/&quot;&gt;demo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/posts/2014/material-design/material-design-cortes.gif&quot; alt=&quot;Material design example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can read more information about his process &lt;a href=&quot;http://franciscortez.com/framer-torch/&quot;&gt;on his blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.google.com/design/spec/material-design/introduction.html&quot; title=&quot;Google Material design specs&quot;&gt;Material design specifications&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://designmodo.com/material-design-resources/&quot;&gt;Material design resources&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>How to use Jekyll with Gulp</title>
