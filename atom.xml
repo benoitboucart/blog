@@ -4,7 +4,7 @@
  <title>Webbb Blog</title>
  <link href="http://blog.webbb.be/atom.xml" rel="self"/>
  <link href="http://blog.webbb.be/"/>
- <updated>2014-10-26T11:43:10+01:00</updated>
+ <updated>2014-10-26T12:11:39+01:00</updated>
  <id>http://blog.webbb.be</id>
  <author>
    <name>Benoît Boucart</name>
@@ -16,11 +16,21 @@
    <link href="http://blog.webbb.be/material-design-animation-examples/"/>
    <updated>2014-10-26T00:00:00+02:00</updated>
    <id>http://blog.webbb.be/material-design-animation-examples</id>
-   <content type="html">&lt;p&gt;Since the launch of Google’s new design guideline called ‘Material Design’ for Android Lollipop. They created a visual language for users that must unify the experience accross devices. You can read more about the subject on &lt;a href=&quot;http://www.google.com/design/spec/material-design/introduction.html&quot; title=&quot;Google Material design specs&quot;&gt;Google’s website&lt;/a&gt;.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Google launched a design guideline for Android Lollipop called &lt;strong&gt;Material Design&lt;/strong&gt; at the Google I/O conference on June 2014. They created a visual language for users that must unify the experience accross devices. You can read more about the subject on &lt;a href=&quot;http://www.google.com/design/spec/material-design/introduction.html&quot; title=&quot;Google Material design specs&quot;&gt;Google’s website&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;A lot of designers have already adopted the guidelines and I’ve collected some great examples.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Animations&lt;/strong&gt; (motion, interaction &amp;amp; transitions) are a key part of the specificiations. Read more about them in the &lt;a href=&quot;http://www.google.com/design/spec/animation/authentic-motion.html&quot;&gt;official specs&lt;/a&gt;: &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Perceiving an object’s tangible form helps us understand how to manipulate it. Motion in the world of material design is not only beautiful, &lt;strong&gt;it builds meaning&lt;/strong&gt; about the spatial relationships, functionality, and intention of the system”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Motion is extremely important for modern applications but be careful to not abuse of them. They have to be subtle and &lt;strong&gt;must have meaning&lt;/strong&gt; to enhance the user experience (otherwise they could have the inverse effect).  &lt;/p&gt;
+
+&lt;p&gt;A lot of designers have already adopted the guidelines and here is a collection of some great examples of &lt;em&gt;Material animations&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;instagram-with-material-design&quot;&gt;Instagram with Material Design&lt;/h2&gt;
+&lt;p&gt;An unsolicited redesign concept of Instagram by &lt;strong&gt;Emmanuel Pacamalan&lt;/strong&gt;.&lt;/p&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Emmanuel Pacamalan&lt;/strong&gt;: “Here my concept of how instagram would look with material design. Material design is the next step in Google’s design evolution for Android. Also, some animations transitions may be too much but it just there to showcase what can be and to showcase separation of elements.”&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -58,6 +68,8 @@
     &lt;img src=&quot;/assets/posts/2014/material-design/material-design-dmytro-prudnikov.gif&quot; alt=&quot;User Profile Interface Animation&quot; /&gt;
 &lt;/a&gt;&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;Jovie Brett&lt;/strong&gt; made some great animations on Dribbble, based on Material Design.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://dribbble.com/shots/1620608-Material-Design&quot; title=&quot;Material animation&quot;&gt;
@@ -90,9 +102,14 @@
 
 &lt;h2 id=&quot;further-reading&quot;&gt;Further reading&lt;/h2&gt;
 &lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@romannurik/material-design-in-the-2014-google-i-o-app-e3b22caffae6&quot; title=&quot;Material design in the 2014 Google I/O app&quot;&gt;Material design in the 2014 Google I/O app&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.google.com/design/spec/material-design/introduction.html&quot; title=&quot;Google Material design specs&quot;&gt;Material design specifications&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@pasql/the-state-of-interaction-design-tools-f755c6515368&quot; title=&quot;The state of Interaction Design tools&quot;&gt;The state of Interaction Design tools&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/@CreativeTim/how-google-fails-at-implementing-its-own-material-design-44bbbf9f6c52&quot; title=&quot;How Google Fails at Implementing Its Own Material Design&quot;&gt;How Google Fails at Implementing Its Own Material Design&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://designmodo.com/material-design-resources/&quot;&gt;Material design resources&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Do you have other stunning examples or resources you want to share about &lt;em&gt;Google Material design animations&lt;/em&gt;? Please let me now in the comment section below or on &lt;a href=&quot;http://twitter.com/benoitboucart&quot;&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
