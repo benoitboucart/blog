@@ -4,7 +4,7 @@
  <title>Webbb Blog</title>
  <link href="http://blog.webbb.be/atom.xml" rel="self"/>
  <link href="http://blog.webbb.be/"/>
- <updated>2014-10-31T22:04:56+01:00</updated>
+ <updated>2014-10-31T22:06:28+01:00</updated>
  <id>http://blog.webbb.be</id>
  <author>
    <name>Benoît Boucart</name>
@@ -333,7 +333,7 @@
 
 &lt;p&gt;&lt;a class=&quot;btn-style&quot; title=&quot;CSS-only off-canvas menu like the Spotify app&quot; href=&quot;http://codepen.io/benske/pen/cxrta&quot; target=&quot;_blank&quot;&gt;View the demo&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;UPDATE 31/10&lt;/strong&gt;: There is an even better solution, proposed by Shaw in the comments below, that make use of CSS transforms for more performant animations. &lt;a href=&quot;http://codepen.io/shshaw/pen/fGiwh&quot; title=&quot;CSS only off-canvas menu with CSS transforms&quot;&gt;See it here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE 31/10/14&lt;/strong&gt;: There is a better solution, proposed by Shaw in the comments below, that make use of CSS transforms for more performant animations. &lt;a href=&quot;http://codepen.io/shshaw/pen/fGiwh&quot; title=&quot;CSS only off-canvas menu with CSS transforms&quot;&gt;See it here&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
