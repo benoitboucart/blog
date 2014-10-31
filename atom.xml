@@ -4,7 +4,7 @@
  <title>Webbb Blog</title>
  <link href="http://blog.webbb.be/atom.xml" rel="self"/>
  <link href="http://blog.webbb.be/"/>
- <updated>2014-10-27T13:52:22+01:00</updated>
+ <updated>2014-10-31T22:04:56+01:00</updated>
  <id>http://blog.webbb.be</id>
  <author>
    <name>Benoît Boucart</name>
@@ -24,7 +24,7 @@
   &lt;p&gt;“Perceiving an object’s tangible form helps us understand how to manipulate it. Motion in the world of material design is not only beautiful, &lt;strong&gt;it builds meaning&lt;/strong&gt; about the spatial relationships, functionality, and intention of the system”&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Motion is extremely important for modern applications but be careful to not abuse of it. It have to be subtle and &lt;strong&gt;must have meaning&lt;/strong&gt; to enhance the user experience (otherwise it  could have the inverse effect).  &lt;/p&gt;
+&lt;p&gt;Motion is extremely important for modern applications but be careful to not abuse of it. It have to be subtle and &lt;strong&gt;must have meaning&lt;/strong&gt; to enhance the user experience (otherwise it could have the inverse effect).  &lt;/p&gt;
 
 &lt;p&gt;A lot of designers have already adopted the guidelines and here is a collection of some great examples of &lt;em&gt;Material animations&lt;/em&gt;.&lt;/p&gt;
 
@@ -332,6 +332,8 @@
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;html&quot;&gt;&lt;span class=&quot;lineno&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#main-navigation&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Menu&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;a class=&quot;btn-style&quot; title=&quot;CSS-only off-canvas menu like the Spotify app&quot; href=&quot;http://codepen.io/benske/pen/cxrta&quot; target=&quot;_blank&quot;&gt;View the demo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE 31/10&lt;/strong&gt;: There is an even better solution, proposed by Shaw in the comments below, that make use of CSS transforms for more performant animations. &lt;a href=&quot;http://codepen.io/shshaw/pen/fGiwh&quot; title=&quot;CSS only off-canvas menu with CSS transforms&quot;&gt;See it here&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
