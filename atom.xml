@@ -4,7 +4,7 @@
  <title>Webbb Blog</title>
  <link href="http://blog.webbb.be/atom.xml" rel="self"/>
  <link href="http://blog.webbb.be/"/>
- <updated>2014-10-31T22:06:28+01:00</updated>
+ <updated>2014-12-04T16:33:51+01:00</updated>
  <id>http://blog.webbb.be</id>
  <author>
    <name>Benoît Boucart</name>
@@ -371,17 +371,17 @@ or &lt;code&gt;Syntax error: Invalid css after bem __ expected &quot;{&quot;&lt;
    <content type="html">&lt;p&gt;To give you a little context: I ran the following command for installing Gulp (a &lt;i&gt;node package module&lt;/i&gt;) globally:
 &lt;code&gt;npm install -g gulp&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;The installation succeed but when I ran this command &lt;code&gt;gulp&lt;/code&gt; in the command line I got a &lt;code&gt;&quot;gulp: command not found&quot;&lt;/code&gt; error. It appeared that it installed “Gulp” in my local folder that is &lt;code&gt;/Users/YOURUSERNAME/node_modules&lt;/code&gt; and not in the &lt;b&gt;global NPM folder&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;The installation succeed but when I ran this &lt;code&gt;gulp&lt;/code&gt; command in the command line I got a &lt;code&gt;&quot;gulp: command not found&quot;&lt;/code&gt; error. It appeared that it installed “Gulp” in my local folder that is &lt;code&gt;/Users/YOURUSERNAME/node_modules&lt;/code&gt; and not in the &lt;b&gt;global NPM folder&lt;/b&gt;.&lt;/p&gt;
 
 &lt;p&gt;You can check this by running this command: &lt;code&gt;npm root&lt;/code&gt; or &lt;code&gt;npm root -g&lt;/code&gt;, which was returning my personal directory &lt;code&gt;/Users/YOURUSERNAME/node_modules&lt;/code&gt; and not the expected &lt;code&gt;/usr/local/lib/node_modules&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;With some trial &amp;amp; error, I finally found the solution. You have to change the “&lt;i&gt;npm config prefix&lt;/i&gt;” like so:
+&lt;p&gt;After some trial &amp;amp; error, I finally found the solution. You have to change the “&lt;i&gt;npm config prefix&lt;/i&gt;” like so:
 &lt;code&gt;npm config set prefix /usr/local&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Then when I re-ran &lt;code&gt;npm root -g&lt;/code&gt;, I got the correct root folder:
 &lt;code&gt;/usr/local/lib/node_modules&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;When I reinstalled Gulp globally (with the &lt;code&gt;-g&lt;/code&gt; param) it finally worked and appeared that it was now correctly installed in the global NPM folder!&lt;/p&gt;
+&lt;p&gt;When I reinstalled Gulp globally (with the &lt;code&gt;-g&lt;/code&gt; param) it finally worked and appeared that it was now correctly installed in the global NPM folder. Yeay!&lt;/p&gt;
 </content>
  </entry>
  
