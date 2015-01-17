@@ -187,7 +187,7 @@
 <h2 id="css3-social-media-icons-3d-rotation">[1] CSS3 Social Media icons 3D rotation</h2>
 <p>The first example is a <strong>CSS3 3D rotation</strong> of a Social Media icon. This is the markup:</p>
 
-<div class="highlight"><pre><code class="html"><span class="lineno">1</span> <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;sm&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="lineno">1</span> <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">&quot;sm&quot;</span><span class="nt">&gt;</span>
 <span class="lineno">2</span>     <span class="nt">&lt;li&gt;</span>
 <span class="lineno">3</span>         <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;https://twitter.com/benoitboucart&quot;</span> <span class="na">target=</span><span class="s">&quot;_blank&quot;</span><span class="nt">&gt;</span>
 <span class="lineno">4</span>             <span class="nt">&lt;span&gt;</span>Twitter<span class="nt">&lt;/span&gt;</span>
@@ -203,7 +203,7 @@
 
 <p>The link has the <code>transform-style: preserve-3d;</code> property set for the 3D effect.</p>
 
-<div class="highlight"><pre><code class="css"><span class="lineno">1</span> <span class="nc">.sm</span> <span class="nt">a</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="lineno">1</span> <span class="nc">.sm</span> <span class="nt">a</span> <span class="p">{</span>
 <span class="lineno">2</span>    <span class="k">background</span><span class="o">:</span> <span class="sx">url(images/sm3d.png)</span> <span class="k">no-repeat</span> <span class="m">#2e8198</span><span class="p">;</span> 
 <span class="lineno">3</span>    <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span>
 <span class="lineno">4</span>    <span class="k">height</span><span class="o">:</span> <span class="m">27px</span><span class="p">;</span> <span class="k">width</span><span class="o">:</span> <span class="m">27px</span><span class="p">;</span> 
@@ -215,7 +215,7 @@
 
 <p>The hover style is even simpler! The <code>background-position</code> is changed and the image is rotated.</p>
 
-<div class="highlight"><pre><code class="css"><span class="lineno">1</span> <span class="nc">.sm</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="lineno">1</span> <span class="nc">.sm</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
 <span class="lineno">2</span>    <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">-27px</span><span class="p">;</span>
 <span class="lineno">3</span>    <span class="n">transform</span><span class="o">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">-90</span><span class="n">deg</span><span class="p">);</span>
 <span class="lineno">4</span> <span class="p">}</span></code></pre></div>
@@ -225,21 +225,21 @@
 <h2 id="simple-css3-3d-hover-text-effect">[2] Simple CSS3 3D hover (text) effect</h2>
 <p>The second example is 100% text, an example can be seen at the bottom of this article. This is the markup for the hover effect:</p>
 
-<div class="highlight"><pre><code class="html"><span class="lineno">1</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">data-content=</span><span class="s">&quot;Hello world!&quot;</span><span class="nt">&gt;</span>Hello world!<span class="nt">&lt;/span&gt;&lt;/a&gt;</span></code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="lineno">1</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">data-content=</span><span class="s">&quot;Hello world!&quot;</span><span class="nt">&gt;</span>Hello world!<span class="nt">&lt;/span&gt;&lt;/a&gt;</span></code></pre></div>
 
 <p>Pay some special attention to the <code>data-content</code> attribute. This is required because it will be showed on hover, via CSS.</p>
 
-<div class="highlight"><pre><code class="css"><span class="lineno"> 1</span> <span class="nc">.bizarlink</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="lineno"> 1</span> <span class="nc">.bizarlink</span> <span class="p">{</span>
 <span class="lineno"> 2</span>   <span class="k">color</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span> <span class="k">text-decoration</span><span class="o">:</span> <span class="k">none</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span> <span class="nb">white</span><span class="p">;</span>
 <span class="lineno"> 3</span>   <span class="k">font-size</span><span class="o">:</span> <span class="m">.9em</span><span class="p">;</span> <span class="k">font-family</span><span class="o">:</span> <span class="n">Arial</span><span class="p">;</span>
 <span class="lineno"> 4</span>   <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span> <span class="k">overflow</span><span class="o">:</span> <span class="k">hidden</span><span class="p">;</span> <span class="k">vertical-align</span><span class="o">:</span> <span class="k">top</span><span class="p">;</span> 
 <span class="lineno"> 5</span>   <span class="n">perspective</span><span class="o">:</span> <span class="m">600px</span><span class="p">;</span> 
-<span class="lineno"> 6</span>   <span class="n">perspective</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span> <span class="m">50</span><span class="o">%</span><span class="p">;</span>
+<span class="lineno"> 6</span>   <span class="n">perspective</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">50%</span> <span class="m">50%</span><span class="p">;</span>
 <span class="lineno"> 7</span> <span class="p">}</span>
 <span class="lineno"> 8</span> <span class="nc">.bizarlink</span> <span class="nt">span</span> <span class="p">{</span>
 <span class="lineno"> 9</span>   <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span> <span class="k">position</span><span class="o">:</span> <span class="k">relative</span><span class="p">;</span> <span class="k">padding</span><span class="o">:</span> <span class="m">1.5em</span> <span class="m">3em</span><span class="p">;</span>
 <span class="lineno">10</span>   <span class="n">transition</span><span class="o">:</span> <span class="n">all</span> <span class="m">400</span><span class="n">ms</span> <span class="n">ease</span><span class="p">;</span>
-<span class="lineno">11</span>   <span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span> <span class="m">0</span><span class="o">%</span><span class="p">;</span>
+<span class="lineno">11</span>   <span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">50%</span> <span class="m">0%</span><span class="p">;</span>
 <span class="lineno">12</span>   <span class="n">transform</span><span class="o">-</span><span class="n">style</span><span class="o">:</span> <span class="n">preserve</span><span class="m">-3</span><span class="n">d</span><span class="p">;</span>
 <span class="lineno">13</span> <span class="p">}</span>
 <span class="lineno">14</span> <span class="nc">.bizarlink</span><span class="nd">:hover</span> <span class="p">{</span><span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="p">}</span>
@@ -252,8 +252,8 @@
 <span class="lineno">21</span>     <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span><span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span> <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span> <span class="k">right</span><span class="o">:</span><span class="m">0</span><span class="p">;</span> <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
 <span class="lineno">22</span>     <span class="k">padding</span><span class="o">:</span> <span class="m">1.5em</span> <span class="m">3em</span><span class="p">;</span>
 <span class="lineno">23</span>     <span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="k">background</span><span class="o">:</span> <span class="m">#000</span><span class="p">;</span> 
-<span class="lineno">24</span>     <span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">50</span><span class="o">%</span> <span class="m">0</span><span class="o">%</span><span class="p">;</span>
-<span class="lineno">25</span>     <span class="n">transform</span><span class="o">:</span> <span class="n">translate3d</span><span class="p">(</span> <span class="m">0px</span><span class="o">,</span> <span class="m">105</span><span class="o">%,</span> <span class="m">0px</span> <span class="p">)</span> <span class="n">rotateX</span><span class="p">(</span> <span class="m">-90</span><span class="n">deg</span> <span class="p">);</span>
+<span class="lineno">24</span>     <span class="n">transform</span><span class="o">-</span><span class="n">origin</span><span class="o">:</span> <span class="m">50%</span> <span class="m">0%</span><span class="p">;</span>
+<span class="lineno">25</span>     <span class="n">transform</span><span class="o">:</span> <span class="n">translate3d</span><span class="p">(</span> <span class="m">0px</span><span class="o">,</span> <span class="m">105%</span><span class="o">,</span> <span class="m">0px</span> <span class="p">)</span> <span class="n">rotateX</span><span class="p">(</span> <span class="m">-90</span><span class="n">deg</span> <span class="p">);</span>
 <span class="lineno">26</span>  <span class="p">}</span></code></pre></div>
 
 <p><a class="btn-style" title="CSS3 3D Hover effects [1]" href="http://dabblet.com/gist/5231289" target="_blank">View the second demo</a></p>

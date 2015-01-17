@@ -194,24 +194,24 @@
 <h2 id="the-markup">The markup</h2>
 <p>So let’s begin. First of all the markup. The <code>revealOnScroll</code> class must be added to the elements that will be animated on scroll:</p>
 
-<div class="highlight"><pre><code class="html"><span class="lineno">1</span> <span class="nt">&lt;div</span> <span class="na">data-animation=</span><span class="s">&quot;flipInX&quot;</span> <span class="na">data-timeout=</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;</span>...some content here...</code></pre></div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="lineno">1</span> <span class="nt">&lt;div</span> <span class="na">data-animation=</span><span class="s">&quot;flipInX&quot;</span> <span class="na">data-timeout=</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;</span>...some content here...</code></pre></div>
 
 <p>The <code>data-animation</code> attribute declares the <code>animate.css</code> animation that will be used. It’s also possible to add an extra optional timeout, that could be useful when multiple elements are animated at the same position (see <a href="http://cdpn.io/yJoqz">the demo</a> for an example of this).</p>
 
 <h2 id="the-javascript--css-animations">The Javascript &amp; CSS animations</h2>
 <p>Then, we need to declare some variables at the top of the Javascript document (don’t forget to load jQuery &amp; Modernizr – needed to check if it’s a “touch” device). I also imported animate.css for the <strong>CSS based animations</strong>.</p>
 
-<div class="highlight"><pre><code class="javascript"><span class="lineno">1</span> <span class="kd">var</span> <span class="nx">$window</span>           <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">),</span>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno">1</span> <span class="kd">var</span> <span class="nx">$window</span>           <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">),</span>
 <span class="lineno">2</span>       <span class="nx">win_height_padded</span> <span class="o">=</span> <span class="nx">$window</span><span class="p">.</span><span class="nx">height</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.1</span><span class="p">,</span>
 <span class="lineno">3</span>       <span class="nx">isTouch</span>           <span class="o">=</span> <span class="nx">Modernizr</span><span class="p">.</span><span class="nx">touch</span><span class="p">;</span></code></pre></div>
 
 <p>Then we have to watch for the <code>scroll</code> event that will be triggered when the user is scrolling:</p>
 
-<div class="highlight"><pre><code class="javascript"><span class="lineno">1</span> <span class="nx">$window</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;scroll&#39;</span><span class="p">,</span> <span class="nx">revealOnScroll</span><span class="p">);</span></code></pre></div>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno">1</span> <span class="nx">$window</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;scroll&#39;</span><span class="p">,</span> <span class="nx">revealOnScroll</span><span class="p">);</span></code></pre></div>
 
 <p>In the <code>revealOnScroll</code> function we check if the element that must be animated is becoming visible. If so, the <strong>animation class</strong> is added and that will trigger the CSS animation.</p>
 
-<div class="highlight"><pre><code class="javascript"><span class="lineno"> 1</span> <span class="kd">function</span> <span class="nx">revealOnScroll</span><span class="p">()</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno"> 1</span> <span class="kd">function</span> <span class="nx">revealOnScroll</span><span class="p">()</span> <span class="p">{</span>
 <span class="lineno"> 2</span>     <span class="kd">var</span> <span class="nx">scrolled</span> <span class="o">=</span> <span class="nx">$window</span><span class="p">.</span><span class="nx">scrollTop</span><span class="p">();</span>
 <span class="lineno"> 3</span>     <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.revealOnScroll:not(.animated)&quot;</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
 <span class="lineno"> 4</span>       <span class="kd">var</span> <span class="nx">$this</span>     <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">),</span>
