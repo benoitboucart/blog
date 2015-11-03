@@ -136,7 +136,7 @@
 
         <div class="row ribbon-holder">
             <div class="lined">
-                <a class="ribbon" href="" title="Go to homepage">
+                <a class="ribbon" href="/#" title="Go to homepage">
                     <div class="ribbon__inner">
                         <div class="ribbon__base">
                             <i class="icon icons-home-alt"></i>
@@ -192,32 +192,43 @@
 
 <ul>
   <li><a href="http://angular-google-maps.org" title="Google Maps for Angular"><strong>Google Maps for AngularJS</strong></a> makes the integration of more advanced features of the Google Maps API (v3) possible. The <a href="http://angular-google-maps.org/demo">demo</a> shows what’s possible with this collection of directives.</li>
-  <li><a href="https://github.com/angular-ui/ui-map"><strong>Angular UI Maps</strong></a> is another set of directives that has less advanced possibilities then <em>Google Maps for AngularJS</em> but enough for a basic usage of the Google Maps API. </li>
+  <li><a href="https://github.com/angular-ui/ui-map"><strong>Angular UI Maps</strong></a> is another set of directives that has less advanced possibilities then <em>Google Maps for AngularJS</em> but enough for a basic usage of the Google Maps API.</li>
 </ul>
 
 <p>For the purpose of this simple demo, I’ll use the second library. This one is sufficient for what we need for this demo: display a Google Map based on a text location.</p>
 
 <p>First of all you’ll have to load the Google Maps API. This can be done by adding this script at the bottom of your HTML file (before the closing <code>&lt;body&gt;</code> tag).</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="lineno">1</span> <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;bower_components/angular/angular.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="lineno">2</span> <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;bower_components/angular-ui-utils/modules/event/event.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="lineno">3</span> <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;bower_components/angular-ui-map/src/map.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="lineno">4</span> <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">&quot;text/javascript&quot;</span> <span class="na">src=</span><span class="s">&quot;https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;callback=onGoogleReady&quot;</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bower_components/angular/angular.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bower_components/angular-ui-utils/modules/event/event.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"bower_components/angular-ui-map/src/map.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;callback=onGoogleReady"</span><span class="nt">&gt;&lt;/script&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>You can also <a href="https://developers.google.com/maps/documentation/javascript/examples/map-simple-async" title="Load the Google Maps API asynchronously">load the API aynchronously</a> if you want, but then make sure to compile the Angular templates with Maps UI directives in it <strong>after</strong> the Google Maps API has been loaded.</p>
 
-<p>Read more on how to install <em>Angular UI Maps</em> on the <a href="https://github.com/angular-ui/ui-map">GitHub repository</a>, and try to display a hardcoded Google Map with this plugin. </p>
+<p>Read more on how to install <em>Angular UI Maps</em> on the <a href="https://github.com/angular-ui/ui-map">GitHub repository</a>, and try to display a hardcoded Google Map with this plugin.</p>
 
 <h2 id="geocode-an-address">Geocode an address</h2>
 <p>If you have an address (user input), you’ll have to “geocode” this string to have the GPS coordinates of the given location (longitude &amp; latitude). You can do this easily via Javascript with the Geocodor Google Maps API.</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno">1</span> <span class="kd">var</span> <span class="nx">geocoder</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">Geocoder</span><span class="p">();</span>
-<span class="lineno">2</span> <span class="nx">geocoder</span><span class="p">.</span><span class="nx">geocode</span><span class="p">(</span> <span class="p">{</span> <span class="s2">&quot;address&quot;</span><span class="o">:</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">textfield</span> <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">results</span><span class="p">,</span> <span class="nx">status</span><span class="p">)</span> <span class="p">{</span>
-<span class="lineno">3</span>     <span class="k">if</span> <span class="p">(</span><span class="nx">status</span> <span class="o">==</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">GeocoderStatus</span><span class="p">.</span><span class="nx">OK</span> <span class="o">&amp;&amp;</span> <span class="nx">results</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-<span class="lineno">4</span>         <span class="kd">var</span> <span class="nx">location</span> <span class="o">=</span> <span class="nx">results</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">geometry</span><span class="p">.</span><span class="nx">location</span><span class="p">;</span>
-<span class="lineno">5</span>         <span class="nx">$scope</span><span class="p">.</span><span class="nx">myMap</span><span class="p">.</span><span class="nx">panTo</span><span class="p">(</span><span class="nx">location</span><span class="p">);</span>
-<span class="lineno">6</span>     <span class="p">}</span>
-<span class="lineno">7</span> <span class="p">});</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7</pre></td><td class="code"><pre><span class="kd">var</span> <span class="nx">geocoder</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">Geocoder</span><span class="p">();</span>
+<span class="nx">geocoder</span><span class="p">.</span><span class="nx">geocode</span><span class="p">(</span> <span class="p">{</span> <span class="s2">"address"</span><span class="p">:</span> <span class="nx">$scope</span><span class="p">.</span><span class="nx">textfield</span> <span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">results</span><span class="p">,</span> <span class="nx">status</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">status</span> <span class="o">==</span> <span class="nx">google</span><span class="p">.</span><span class="nx">maps</span><span class="p">.</span><span class="nx">GeocoderStatus</span><span class="p">.</span><span class="nx">OK</span> <span class="o">&amp;&amp;</span> <span class="nx">results</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">location</span> <span class="o">=</span> <span class="nx">results</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">geometry</span><span class="p">.</span><span class="nx">location</span><span class="p">;</span>
+        <span class="nx">$scope</span><span class="p">.</span><span class="nx">myMap</span><span class="p">.</span><span class="nx">panTo</span><span class="p">(</span><span class="nx">location</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>The above code will geocode the address that the user has filled in (<code>$scope.textfield</code>) and will then pan to the geocoded location (<code>$scope.myMap.panTo(location)</code>).</p>
 
@@ -271,7 +282,7 @@
                     <div class="article-meta__user lined">
                         <div class="clearfix">
                             <div class="col5">
-                                <img class="profile__pic" src="https://pbs.twimg.com/profile_images/566602223128289280/O2svcnph.jpeg" width="105" height="105" alt="Image">
+                                <img class="profile__pic" src="https://pbs.twimg.com/profile_images/658350113803345920/JiVcSaxD.jpg" width="105" height="105" alt="Image">
                                 <h3 class="profile__title">
                                     Benoît Boucart
                                 </h3>

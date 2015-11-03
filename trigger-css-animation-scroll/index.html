@@ -136,7 +136,7 @@
 
         <div class="row ribbon-holder">
             <div class="lined">
-                <a class="ribbon" href="" title="Go to homepage">
+                <a class="ribbon" href="/#" title="Go to homepage">
                     <div class="ribbon__inner">
                         <div class="ribbon__base">
                             <i class="icon icons-home-alt"></i>
@@ -194,43 +194,68 @@
 <h2 id="the-markup">The markup</h2>
 <p>So let’s begin. First of all the markup. The <code>revealOnScroll</code> class must be added to the elements that will be animated on scroll:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="lineno">1</span> <span class="nt">&lt;div</span> <span class="na">data-animation=</span><span class="s">&quot;flipInX&quot;</span> <span class="na">data-timeout=</span><span class="s">&quot;400&quot;</span><span class="nt">&gt;</span>...some content here...</code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">data-animation=</span><span class="s">"flipInX"</span> <span class="na">data-timeout=</span><span class="s">"400"</span><span class="nt">&gt;</span>...some content here...<span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>The <code>data-animation</code> attribute declares the <code>animate.css</code> animation that will be used. It’s also possible to add an extra optional timeout, that could be useful when multiple elements are animated at the same position (see <a href="http://cdpn.io/yJoqz">the demo</a> for an example of this).</p>
 
 <h2 id="the-javascript--css-animations">The Javascript &amp; CSS animations</h2>
 <p>Then, we need to declare some variables at the top of the Javascript document (don’t forget to load jQuery &amp; Modernizr – needed to check if it’s a “touch” device). I also imported animate.css for the <strong>CSS based animations</strong>.</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno">1</span> <span class="kd">var</span> <span class="nx">$window</span>           <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">),</span>
-<span class="lineno">2</span>       <span class="nx">win_height_padded</span> <span class="o">=</span> <span class="nx">$window</span><span class="p">.</span><span class="nx">height</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.1</span><span class="p">,</span>
-<span class="lineno">3</span>       <span class="nx">isTouch</span>           <span class="o">=</span> <span class="nx">Modernizr</span><span class="p">.</span><span class="nx">touch</span><span class="p">;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3</pre></td><td class="code"><pre>  <span class="kd">var</span> <span class="nx">$window</span>           <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="nb">window</span><span class="p">),</span>
+      <span class="nx">win_height_padded</span> <span class="o">=</span> <span class="nx">$window</span><span class="p">.</span><span class="nx">height</span><span class="p">()</span> <span class="o">*</span> <span class="mf">1.1</span><span class="p">,</span>
+      <span class="nx">isTouch</span>           <span class="o">=</span> <span class="nx">Modernizr</span><span class="p">.</span><span class="nx">touch</span><span class="p">;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Then we have to watch for the <code>scroll</code> event that will be triggered when the user is scrolling:</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno">1</span> <span class="nx">$window</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;scroll&#39;</span><span class="p">,</span> <span class="nx">revealOnScroll</span><span class="p">);</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>  <span class="nx">$window</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'scroll'</span><span class="p">,</span> <span class="nx">revealOnScroll</span><span class="p">);</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>In the <code>revealOnScroll</code> function we check if the element that must be animated is becoming visible. If so, the <strong>animation class</strong> is added and that will trigger the CSS animation.</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno"> 1</span> <span class="kd">function</span> <span class="nx">revealOnScroll</span><span class="p">()</span> <span class="p">{</span>
-<span class="lineno"> 2</span>     <span class="kd">var</span> <span class="nx">scrolled</span> <span class="o">=</span> <span class="nx">$window</span><span class="p">.</span><span class="nx">scrollTop</span><span class="p">();</span>
-<span class="lineno"> 3</span>     <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;.revealOnScroll:not(.animated)&quot;</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-<span class="lineno"> 4</span>       <span class="kd">var</span> <span class="nx">$this</span>     <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">),</span>
-<span class="lineno"> 5</span>           <span class="nx">offsetTop</span> <span class="o">=</span> <span class="nx">$this</span><span class="p">.</span><span class="nx">offset</span><span class="p">().</span><span class="nx">top</span><span class="p">;</span>
-<span class="lineno"> 6</span> 
-<span class="lineno"> 7</span>       <span class="k">if</span> <span class="p">(</span><span class="nx">scrolled</span> <span class="o">+</span> <span class="nx">win_height_padded</span> <span class="o">&gt;</span> <span class="nx">offsetTop</span><span class="p">)</span> <span class="p">{</span>
-<span class="lineno"> 8</span>         <span class="k">if</span> <span class="p">(</span><span class="nx">$this</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">&#39;timeout&#39;</span><span class="p">))</span> <span class="p">{</span>
-<span class="lineno"> 9</span>           <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-<span class="lineno">10</span>             <span class="nx">$this</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;animated &#39;</span> <span class="o">+</span> <span class="nx">$this</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">&#39;animation&#39;</span><span class="p">));</span>
-<span class="lineno">11</span>           <span class="p">},</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">$this</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">&#39;timeout&#39;</span><span class="p">),</span><span class="mi">10</span><span class="p">));</span>
-<span class="lineno">12</span>         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-<span class="lineno">13</span>           <span class="nx">$this</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;animated &#39;</span> <span class="o">+</span> <span class="nx">$this</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">&#39;animation&#39;</span><span class="p">));</span>
-<span class="lineno">14</span>         <span class="p">}</span>
-<span class="lineno">15</span>       <span class="p">}</span>
-<span class="lineno">16</span>     <span class="p">});</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16</pre></td><td class="code"><pre>  <span class="kd">function</span> <span class="nx">revealOnScroll</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">scrolled</span> <span class="o">=</span> <span class="nx">$window</span><span class="p">.</span><span class="nx">scrollTop</span><span class="p">();</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s2">".revealOnScroll:not(.animated)"</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">$this</span>     <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">),</span>
+          <span class="nx">offsetTop</span> <span class="o">=</span> <span class="nx">$this</span><span class="p">.</span><span class="nx">offset</span><span class="p">().</span><span class="nx">top</span><span class="p">;</span>
+
+      <span class="k">if</span> <span class="p">(</span><span class="nx">scrolled</span> <span class="o">+</span> <span class="nx">win_height_padded</span> <span class="o">&gt;</span> <span class="nx">offsetTop</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">$this</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">'timeout'</span><span class="p">))</span> <span class="p">{</span>
+          <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+            <span class="nx">$this</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'animated '</span> <span class="o">+</span> <span class="nx">$this</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">'animation'</span><span class="p">));</span>
+          <span class="p">},</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">$this</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">'timeout'</span><span class="p">),</span><span class="mi">10</span><span class="p">));</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+          <span class="nx">$this</span><span class="p">.</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">'animated '</span> <span class="o">+</span> <span class="nx">$this</span><span class="p">.</span><span class="nx">data</span><span class="p">(</span><span class="s1">'animation'</span><span class="p">));</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">});</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Isn’t that easy to achieve? There is also another check for the inverse: when the elements becomes invisible the <strong>animation classes are removed</strong>. This will make it possible to animate the items more then one time per request.</p>
 
 <p><a href="http://cdpn.io/yJoqz">View the demo</a></p>
+
+<p><strong>UPDATE</strong>: <a href="https://www.webucator.com/webdesign/css.cfm" title="CSS courses by Webucator">Webucator</a> made a nice video tutorial about how to achieve this effect:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TfDK-KLq0Ks" frameborder="0" allowfullscreen=""></iframe>
+
 
                     </div><!--/content-->
                 </div><!--/lined-->
@@ -287,7 +312,7 @@
                     <div class="article-meta__user lined">
                         <div class="clearfix">
                             <div class="col5">
-                                <img class="profile__pic" src="https://pbs.twimg.com/profile_images/566602223128289280/O2svcnph.jpeg" width="105" height="105" alt="Image">
+                                <img class="profile__pic" src="https://pbs.twimg.com/profile_images/658350113803345920/JiVcSaxD.jpg" width="105" height="105" alt="Image">
                                 <h3 class="profile__title">
                                     Benoît Boucart
                                 </h3>

@@ -136,7 +136,7 @@
 
         <div class="row ribbon-holder">
             <div class="lined">
-                <a class="ribbon" href="" title="Go to homepage">
+                <a class="ribbon" href="/#" title="Go to homepage">
                     <div class="ribbon__inner">
                         <div class="ribbon__base">
                             <i class="icon icons-home-alt"></i>
@@ -193,25 +193,26 @@
 </ul>
 <p>The core concept is based on this CSS code, pay attention to the <code>:target</code> pseudo selector  (will be triggered when you click on a link where <code>#main-nav</code> is targetted (this is SASS syntax):</p>
 
-<div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nn">#main-nav</span><span class="nd">:target</span> <span class="p">{</span>
-   <span class="na">width</span><span class="o">:</span> <span class="mi">20</span><span class="kt">%</span><span class="p">;</span>
-   <span class="nt">a</span> <span class="p">{</span> <span class="na">margin-left</span><span class="o">:</span> <span class="mi">0</span><span class="p">;</span> <span class="p">}</span>
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nn">#main-nav</span><span class="nd">:target</span> <span class="p">{</span>
+   <span class="nl">width</span><span class="p">:</span> <span class="m">20%</span><span class="p">;</span>
+   <span class="nt">a</span> <span class="p">{</span> <span class="nl">margin-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
 <span class="p">}</span>
 <span class="nn">#main-nav</span><span class="nd">:target</span> <span class="o">~</span> <span class="nc">.page-wrap</span> <span class="p">{</span>
-   <span class="na">width</span><span class="o">:</span> <span class="mi">80</span><span class="kt">%</span><span class="p">;</span>
+   <span class="nl">width</span><span class="p">:</span> <span class="m">80%</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nn">#main-nav</span><span class="nd">:target</span> <span class="o">~</span> <span class="nc">.main-header</span> <span class="p">{</span>
    <span class="nc">.open-menu</span> <span class="p">{</span>
-      <span class="na">display</span><span class="o">:</span> <span class="no">none</span><span class="p">;</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
    <span class="p">}</span>
    <span class="nc">.close-menu</span> <span class="p">{</span>
-      <span class="na">display</span><span class="o">:</span> <span class="no">block</span><span class="p">;</span>
+      <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
   <span class="p">}</span>
-<span class="p">}</span></code></pre></div>
+<span class="p">}</span></code></pre></figure>
 
 <p>This link triggers the <em>:target</em> CSS selector:</p>
 
-<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="lineno">1</span> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;#main-navigation&quot;</span><span class="nt">&gt;</span>Menu<span class="nt">&lt;/a&gt;</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#main-navigation"</span><span class="nt">&gt;</span>Menu<span class="nt">&lt;/a&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p><a class="btn-style" title="CSS-only off-canvas menu like the Spotify app" href="http://codepen.io/benske/pen/cxrta" target="_blank">View the demo</a></p>
 
@@ -272,7 +273,7 @@
                     <div class="article-meta__user lined">
                         <div class="clearfix">
                             <div class="col5">
-                                <img class="profile__pic" src="https://pbs.twimg.com/profile_images/566602223128289280/O2svcnph.jpeg" width="105" height="105" alt="Image">
+                                <img class="profile__pic" src="https://pbs.twimg.com/profile_images/658350113803345920/JiVcSaxD.jpg" width="105" height="105" alt="Image">
                                 <h3 class="profile__title">
                                     Benoît Boucart
                                 </h3>

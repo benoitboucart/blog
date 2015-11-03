@@ -136,7 +136,7 @@
 
         <div class="row ribbon-holder">
             <div class="lined">
-                <a class="ribbon" href="" title="Go to homepage">
+                <a class="ribbon" href="/#" title="Go to homepage">
                     <div class="ribbon__inner">
                         <div class="ribbon__base">
                             <i class="icon icons-home-alt"></i>
@@ -186,11 +186,11 @@
             <div class="row">
                 <div class="lined">
                     <div class="content content--main">
-                        <p>This blog is built with <strong>Jekyll</strong>, a static site generator. That means that raw HTML files are generated and so no database is required like for a WordPress blog. That gives your website a considerable performance boost. </p>
+                        <p>This blog is built with <strong>Jekyll</strong>, a static site generator. That means that raw HTML files are generated and so no database is required like for a WordPress blog. That gives your website a considerable performance boost.</p>
 
 <p>One of the other advantages of using <em>Jekyll</em> is that you can write your posts in your favorite text editor and then push your changes via GIT for deployment.</p>
 
-<p>Before developping my new blog with Jekyll, I started with the HTML / CSS / Javascript slicing of <a href="https://dribbble.com/shots/1527973-Personal-blog-redesign" title="Blog design on Dribbble">my design</a>. I used <strong>Sass with Compass</strong> in combination with Gulp. </p>
+<p>Before developping my new blog with Jekyll, I started with the HTML / CSS / Javascript slicing of <a href="https://dribbble.com/shots/1527973-Personal-blog-redesign" title="Blog design on Dribbble">my design</a>. I used <strong>Sass with Compass</strong> in combination with Gulp.</p>
 
 <blockquote>
   <p>For more information about Gulp and how it works, I recommend <a href="http://www.smashingmagazine.com/2014/06/11/building-with-gulp/" title="Article about Gulp JS">this article</a>.</p>
@@ -201,26 +201,41 @@
 <h2 id="the-css-task">The CSS task</h2>
 <p>I used this task for converting the SASS files and minify the generated CSS:</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno"> 1</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;compass&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-<span class="lineno"> 2</span>     <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="nx">srcStylesheets</span> <span class="o">+</span> <span class="s1">&#39;*.scss&#39;</span><span class="p">)</span>
-<span class="lineno"> 3</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">compass</span><span class="p">({</span>
-<span class="lineno"> 4</span>             <span class="nx">css</span>     <span class="o">:</span> <span class="nx">distStylesheets</span><span class="p">,</span>
-<span class="lineno"> 5</span>             <span class="nx">sass</span>    <span class="o">:</span> <span class="nx">srcStylesheets</span><span class="p">,</span>
-<span class="lineno"> 6</span>             <span class="nx">image</span>   <span class="o">:</span> <span class="nx">distImages</span><span class="p">,</span>
-<span class="lineno"> 7</span>             <span class="nx">logging</span> <span class="o">:</span> <span class="kc">true</span>
-<span class="lineno"> 8</span>         <span class="p">}))</span>
-<span class="lineno"> 9</span>             <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;error&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
-<span class="lineno">10</span>                 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
-<span class="lineno">11</span>             <span class="p">})</span>
-<span class="lineno">12</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">minifyCSS</span><span class="p">())</span>
-<span class="lineno">13</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="nx">distStylesheets</span><span class="p">))</span>
-<span class="lineno">14</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">browserSync</span><span class="p">.</span><span class="nx">reload</span><span class="p">({</span><span class="nx">stream</span><span class="o">:</span><span class="kc">true</span><span class="p">}));</span>
-<span class="lineno">15</span> <span class="p">});</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15</pre></td><td class="code"><pre><span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'compass'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="nx">srcStylesheets</span> <span class="o">+</span> <span class="s1">'*.scss'</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">compass</span><span class="p">({</span>
+            <span class="na">css</span>     <span class="p">:</span> <span class="nx">distStylesheets</span><span class="p">,</span>
+            <span class="na">sass</span>    <span class="p">:</span> <span class="nx">srcStylesheets</span><span class="p">,</span>
+            <span class="na">image</span>   <span class="p">:</span> <span class="nx">distImages</span><span class="p">,</span>
+            <span class="na">logging</span> <span class="p">:</span> <span class="kc">true</span>
+        <span class="p">}))</span>
+            <span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'error'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+            <span class="p">})</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">minifyCSS</span><span class="p">())</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="nx">distStylesheets</span><span class="p">))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">browserSync</span><span class="p">.</span><span class="nx">reload</span><span class="p">({</span><span class="na">stream</span><span class="p">:</span><span class="kc">true</span><span class="p">}));</span>
+<span class="p">});</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>The last “Gulp pipe” will reload the browser window when the CSS has been generated. The magic behind this is <strong>browserSync</strong>. This plugin will reload <strong>all your devices</strong>, no matter if its a desktop, tablet or smartphone.</p>
 
 <blockquote>
-  <p>BrowserSync makes your workflow faster by synchronising URLs, interactions and code changes across <strong>multiple devices</strong>. It’s wicked-fast and totally free. </p>
+  <p>BrowserSync makes your workflow faster by synchronising URLs, interactions and code changes across <strong>multiple devices</strong>. It’s wicked-fast and totally free.</p>
 </blockquote>
 
 <p>You can read more about BrowserSync and how to install it <a href="http://shakyshane.com/gulpjs-sass-browsersync-ftw/" title="Gulp - Sass - Browsersync ftw">on the blog of its developer</a>.</p>
@@ -228,39 +243,63 @@
 <h2 id="the-javascript-task">The Javascript task</h2>
 <p>The Javascript Gulp task is similar to the CSS task:</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno"> 1</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;js&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-<span class="lineno"> 2</span>     <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">([</span><span class="nx">srcJavascripts</span> <span class="o">+</span> <span class="s1">&#39;plugins.js&#39;</span><span class="p">,</span> <span class="nx">srcJavascripts</span> <span class="o">+</span> <span class="s1">&#39;main.js&#39;</span><span class="p">])</span>
-<span class="lineno"> 3</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">concat</span><span class="p">(</span><span class="nx">pkg</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s1">&#39;.js&#39;</span><span class="p">))</span>
-<span class="lineno"> 4</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="nx">distJavascripts</span><span class="p">))</span>
-<span class="lineno"> 5</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">rename</span><span class="p">(</span><span class="nx">pkg</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s1">&#39;.min.js&#39;</span><span class="p">))</span>
-<span class="lineno"> 6</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">uglify</span><span class="p">())</span>
-<span class="lineno"> 7</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">size</span><span class="p">())</span>
-<span class="lineno"> 8</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="nx">distJavascripts</span><span class="p">))</span>
-<span class="lineno"> 9</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">browserSync</span><span class="p">.</span><span class="nx">reload</span><span class="p">({</span><span class="nx">stream</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span> <span class="nx">once</span><span class="o">:</span> <span class="kc">true</span><span class="p">}));</span>
-<span class="lineno">10</span> <span class="p">});</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="code"><pre><span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'js'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">([</span><span class="nx">srcJavascripts</span> <span class="o">+</span> <span class="s1">'plugins.js'</span><span class="p">,</span> <span class="nx">srcJavascripts</span> <span class="o">+</span> <span class="s1">'main.js'</span><span class="p">])</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">concat</span><span class="p">(</span><span class="nx">pkg</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s1">'.js'</span><span class="p">))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="nx">distJavascripts</span><span class="p">))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">rename</span><span class="p">(</span><span class="nx">pkg</span><span class="p">.</span><span class="nx">name</span> <span class="o">+</span> <span class="s1">'.min.js'</span><span class="p">))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">uglify</span><span class="p">())</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">size</span><span class="p">())</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="nx">distJavascripts</span><span class="p">))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">browserSync</span><span class="p">.</span><span class="nx">reload</span><span class="p">({</span><span class="na">stream</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span> <span class="na">once</span><span class="p">:</span> <span class="kc">true</span><span class="p">}));</span>
+<span class="p">});</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>This task will combine &amp; minify all the Javascript files and reload the open browser(s) when a Javascript file changed.</p>
 
 <h2 id="the-html--jekyll-task">The HTML &amp; Jekyll task</h2>
 <p>And now the most interesting part: the HTML &amp; Jekyll tasks. The HTML task will be triggered <strong>after Jekyll’s task</strong> to minify the generated HTML files:</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno">1</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;html&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;jekyll&#39;</span><span class="p">],</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-<span class="lineno">2</span>     <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">([</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">deploy</span><span class="p">,</span> <span class="s1">&#39;*.html&#39;</span><span class="p">),</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">deploy</span><span class="p">,</span> <span class="s1">&#39;*/*/*/*.html&#39;</span><span class="p">)]</span><span class="cm">/*&#39;*.html&#39;*/</span><span class="p">)</span>
-<span class="lineno">3</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">htmlmin</span><span class="p">({</span><span class="nx">collapseWhitespace</span><span class="o">:</span> <span class="kc">true</span><span class="p">}))</span>
-<span class="lineno">4</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="nx">deploy</span><span class="p">))</span>
-<span class="lineno">5</span>         <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">browserSync</span><span class="p">.</span><span class="nx">reload</span><span class="p">({</span><span class="nx">stream</span><span class="o">:</span><span class="kc">true</span><span class="p">,</span> <span class="nx">once</span><span class="o">:</span> <span class="kc">true</span><span class="p">}));</span>
-<span class="lineno">6</span> <span class="p">});</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6</pre></td><td class="code"><pre><span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'html'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'jekyll'</span><span class="p">],</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">([</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">deploy</span><span class="p">,</span> <span class="s1">'*.html'</span><span class="p">),</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">deploy</span><span class="p">,</span> <span class="s1">'*/*/*/*.html'</span><span class="p">)]</span><span class="cm">/*'*.html'*/</span><span class="p">)</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">htmlmin</span><span class="p">({</span><span class="na">collapseWhitespace</span><span class="p">:</span> <span class="kc">true</span><span class="p">}))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="nx">deploy</span><span class="p">))</span>
+        <span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">browserSync</span><span class="p">.</span><span class="nx">reload</span><span class="p">({</span><span class="na">stream</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span> <span class="na">once</span><span class="p">:</span> <span class="kc">true</span><span class="p">}));</span>
+<span class="p">});</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>The <em>“Jekyll”</em> task is based on <a href="http://stackoverflow.com/questions/21856861/running-jekyll-as-a-child-process-in-gulp-node">multiple</a> <a href="http://stackoverflow.com/questions/21293999/use-jekyll-with-gulp">StackOverflow</a> <a href="http://stackoverflow.com/questions/23185448/managing-gulp-dependencies-when-spawning-child-processes">answers</a>. It will run the <code>build</code> command of Jekyll.</p>
 
-<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="lineno">1</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;jekyll&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">gulpCallBack</span><span class="p">){</span>
-<span class="lineno">2</span>     <span class="kd">var</span> <span class="nx">spawn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;child_process&#39;</span><span class="p">).</span><span class="nx">spawn</span><span class="p">;</span>
-<span class="lineno">3</span>     <span class="kd">var</span> <span class="nx">jekyll</span> <span class="o">=</span> <span class="nx">spawn</span><span class="p">(</span><span class="s1">&#39;jekyll&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;build&#39;</span><span class="p">],</span> <span class="p">{</span><span class="nx">stdio</span><span class="o">:</span> <span class="s1">&#39;inherit&#39;</span><span class="p">});</span>
-<span class="lineno">4</span> 
-<span class="lineno">5</span>     <span class="nx">jekyll</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;exit&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">code</span><span class="p">)</span> <span class="p">{</span>
-<span class="lineno">6</span>         <span class="nx">gulpCallBack</span><span class="p">(</span><span class="nx">code</span> <span class="o">===</span> <span class="mi">0</span> <span class="o">?</span> <span class="kc">null</span> <span class="o">:</span> <span class="s1">&#39;ERROR: Jekyll process exited with code: &#39;</span><span class="o">+</span><span class="nx">code</span><span class="p">);</span>
-<span class="lineno">7</span>     <span class="p">});</span>
-<span class="lineno">8</span> <span class="p">});</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8</pre></td><td class="code"><pre><span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">'jekyll'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">gulpCallBack</span><span class="p">){</span>
+    <span class="kd">var</span> <span class="nx">spawn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'child_process'</span><span class="p">).</span><span class="nx">spawn</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">jekyll</span> <span class="o">=</span> <span class="nx">spawn</span><span class="p">(</span><span class="s1">'jekyll'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'build'</span><span class="p">],</span> <span class="p">{</span><span class="na">stdio</span><span class="p">:</span> <span class="s1">'inherit'</span><span class="p">});</span>
+
+    <span class="nx">jekyll</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'exit'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">code</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">gulpCallBack</span><span class="p">(</span><span class="nx">code</span> <span class="o">===</span> <span class="mi">0</span> <span class="p">?</span> <span class="kc">null</span> <span class="p">:</span> <span class="s1">'ERROR: Jekyll process exited with code: '</span><span class="o">+</span><span class="nx">code</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">});</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <h2 id="conclusion">Conclusion</h2>
 <p>Now I can update my blog and see the updates on all my connected devices immediately with one single “gulp” command. No need to worry about SASS compiling or Jekyll builds. Isn’t that easy?</p>
@@ -314,7 +353,7 @@
                     <div class="article-meta__user lined">
                         <div class="clearfix">
                             <div class="col5">
-                                <img class="profile__pic" src="https://pbs.twimg.com/profile_images/566602223128289280/O2svcnph.jpeg" width="105" height="105" alt="Image">
+                                <img class="profile__pic" src="https://pbs.twimg.com/profile_images/658350113803345920/JiVcSaxD.jpg" width="105" height="105" alt="Image">
                                 <h3 class="profile__title">
                                     Benoît Boucart
                                 </h3>
