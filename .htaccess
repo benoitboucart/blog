@@ -1,0 +1,3 @@
+Redirect 301 / https://bouc.art/
+Redirect 301 ^/$ https://bouc.art/
+
